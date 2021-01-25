@@ -93,6 +93,9 @@ In ```params.yaml```, add the following:
 
 You'll need to get the mux index and drive topic name in ```mux.cpp``` for the new ```Channel```, and the keyboard character, mux index, and joystick button index will all need to be added as member variables in ```behavior_controller.cpp```. Your planning node will obviously need the drive topic name as well.
 
+#### Planning
+Navigation folder contains left wall following algorithm by which the bot will follow the left wall of the environment. Tuning some parameter in control.py and pid_error.py may return in better optimization and effective wall following. Slight adjustment in PID controller params and DESIRED_DISTANCE_LEFT and RIGHT may show better results for different type of environment. 
+
 ### Parameters
 
 The parameters listed below can be modified in the ```params.yaml``` file.
@@ -166,3 +169,11 @@ The parameters listed below can be modified in the ```params.yaml``` file.
 
 ```joy_button_idx```: The index of the joystick button used to turn on/off joystick driving.
 
+#### Commands 
+- roslaunch f1tenth_simulator simulator.launch
+- roslaunch f1tenth_simulator coontrol.launch
+
+### Maintainers
+Kartikey Vishnu
+Raghav 
+Krushnal Patel
