@@ -172,8 +172,3 @@ The parameters listed below can be modified in the ```params.yaml``` file.
 #### Commands 
 - roslaunch f1tenth_simulator simulator.launch
 - roslaunch f1tenth_simulator coontrol.launch
-
-### Maintainers
-- Kartiey Vishnu
-- Ragahv
-- Krushnal Patel
